@@ -22,6 +22,7 @@ return require('packer').startup(function(use)
         "williamboman/mason-lspconfig.nvim",
         "neovim/nvim-lspconfig",
     })
+    use("github/copilot.vim")
     use({"lvimuser/lsp-inlayhints.nvim"})
     use("onsails/lspkind.nvim")
     use({

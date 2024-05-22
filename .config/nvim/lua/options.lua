@@ -1,3 +1,7 @@
+-- pythonファイルで補完をオフにする
+vim.cmd([[autocmd FileType python lua require'cmp'.setup.buffer { enabled = false }]])
+
+
 -- lang
 -- vim.cmd('language en_US.utf8') -- 表示言語を英語にする（Linux）
 -- vim.cmd('language en_US') -- 表示言語を英語にする（Mac）
@@ -58,3 +62,7 @@ vim.opt.signcolumn = "yes" -- サインカラムを表示
 
 -- カーソルの形状
 vim.o.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20"
+-- undoの永続化
+vim.cmd[[set undodir=~/.nvim/undo]]
+vim.cmd[[set undofile]]
+
