@@ -6,15 +6,15 @@ local mux = wezterm.mux
 wezterm.on('gui-startup', function(cmd)
   local tab, pane, window = mux.spawn_window(cmd or {})
   local editor_pane = pane:split {
-    direction = 'Top',
+    direction = 'Left',
     size = 0.7,
   }
 end)
 
 return {
-  initial_cols = 140,
-  initial_rows = 50,
-  font_size = 14.0,
+  initial_cols = 280,
+  initial_rows = 100,
+  font_size = 12.0,
   cell_width = 1.0,
   line_height = 1.0,
   color_scheme = "tokyonight_night",

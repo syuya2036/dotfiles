@@ -41,3 +41,4 @@ antigen theme candy
 # Tell antigen that you're done
 antigen apply
 eval "$(~/.local/bin/mise activate zsh)"
+PATH="$HOME/.cargo/bin:$PATH"

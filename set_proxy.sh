@@ -14,7 +14,7 @@ function set_proxy() {
   git config --global http.proxy $proxy
   git config --global https.proxy $proxy
 
-	npm -g config set proxy $proxy
+  npm -g config set proxy $proxy
   npm -g config set https-proxy $proxy
   npm -g config set registry "http://registry.npmjs.org/"
 }

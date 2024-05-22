@@ -4,3 +4,14 @@ function mcd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
 
 alias clip="pbcopy"
 alias vim="nvim"
+
+
+function clear-screen {
+	ls
+}
+bindkey -d
+# bindkey '^L' forward-char
+# bindkey '^J' backward-char
+# bindkey '^I' up-line-or-history
+# bindkey '^K' down-line-or-history
+# bindkey '^H' backward-delete-char
