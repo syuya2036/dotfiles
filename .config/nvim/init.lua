@@ -13,4 +13,4 @@ vim.cmd[[colorscheme tokyonight-night]]
 
 require("lsp-inlayhints").setup()
 require("keymaps")
-
+local ht = require('haskell-tools')

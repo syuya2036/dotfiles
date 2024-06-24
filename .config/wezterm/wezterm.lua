@@ -14,9 +14,9 @@ end)
 return {
   initial_cols = 280,
   initial_rows = 100,
-  font_size = 12.0,
-  cell_width = 1.0,
-  line_height = 1.0,
+  font_size = 11.0,
+  cell_width = 1,
+  line_height = 1,
   color_scheme = "tokyonight_night",
   window_background_opacity = 0.65,
   text_background_opacity = 1,

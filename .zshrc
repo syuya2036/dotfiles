@@ -42,3 +42,5 @@ antigen theme candy
 antigen apply
 eval "$(~/.local/bin/mise activate zsh)"
 PATH="$HOME/.cargo/bin:$PATH"
+
+[ -f "/Users/shuya/.ghcup/env" ] && . "/Users/shuya/.ghcup/env" # ghcup-env

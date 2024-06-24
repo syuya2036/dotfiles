@@ -9,6 +9,8 @@ return require('packer').startup(function(use)
         },
     }
 
+    use("mrcjkb/haskell-tools.nvim")
+
     use ({"folke/tokyonight.nvim"})
     use("hrsh7th/cmp-nvim-lsp")
     use("hrsh7th/cmp-buffer")

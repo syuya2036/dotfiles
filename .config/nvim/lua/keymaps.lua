@@ -21,8 +21,6 @@ vim.keymap.set('n', '<C-w>', ':wq!', {noremap=true})
 vim.keymap.set('i', '<C-w>', '<ESC>:wq!', {noremap=true})
 vim.keymap.set('v', '<C-w>', ':wq!', {noremap=true})
 
-vim.keymap.set('n', 'd', '"_d', {noremap = true})
-vim.keymap.set('v', 'd', '"_d', {noremap = true})
 -- 2. build-in LSP function
 -- keyboard shortcut
 vim.keymap.set('n', 'K',  '<cmd>lua vim.lsp.buf.hover()<CR>')
