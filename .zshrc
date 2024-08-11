@@ -4,11 +4,6 @@ export PATH="/opt/homebrew/bin:$PATH"
 export PATH="$PATH:/Users/shuya/Develop/flutter/bin"
 export GOPATH=$HOME/Documents/go
 export PATH=$PATH:$GOPATH/bin
-
-if [ -f ~/.zsh_alias ]; then
-    source ~/.zsh_alias
-fi
-
 if [ -f ~/set_proxy.sh ]; then
     source ~/set_proxy.sh
 fi
@@ -44,3 +39,8 @@ eval "$(~/.local/bin/mise activate zsh)"
 PATH="$HOME/.cargo/bin:$PATH"
 
 [ -f "/Users/shuya/.ghcup/env" ] && . "/Users/shuya/.ghcup/env" # ghcup-env
+if [ -f ~/.zsh_alias ]; then
+    source ~/.zsh_alias
+fi
+
+
