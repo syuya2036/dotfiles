@@ -1,0 +1,11 @@
+[tools]
+go = "1.21"
+python = "3.11.9"
+git = "2.44.0"
+node = "22.8.0"
+rust = "latest"
+rust-analyzer = "2024-03-11"
+github-cli = "2.51.0"
+julia = "1.10.2"
+nim = "1.6.14"
+bun = "1.1.8"

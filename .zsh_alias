@@ -1,0 +1,14 @@
+alias l="ls -la"
+alias la="ls -a"
+
+function mcd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
+
+alias clip="pbcopy"
+alias vim="nvim"
+alias g="g++ -I. -std=c++23 -o a.out"
+alias a="./a.out"
+
+function clear-screen {
+	ls
+}
+bindkey -d
