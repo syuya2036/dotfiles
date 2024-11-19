@@ -1,21 +1,21 @@
 local on_attach = function(client, bufnr)
-  -- lsp-inlayhintsの'on_attach'関数を呼び出す
-  require("lsp-inlayhints").on_attach(client, bufnr)
+	-- lsp-inlayhintsの'on_attach'関数を呼び出す
+	require("lsp-inlayhints").on_attach(client, bufnr)
 end
 
-require("mason").setup()
-require("mason-lspconfig").setup({
-	ensure_installed = {
-		"pyright",
-		"lua_ls",
-	},
-})
-
 require("lspconfig").pyright.setup({
-    on_attach = on_attach
+	on_attach = on_attach
 })
 require("lspconfig").lua_ls.setup({})
 
+require("lspconfig").clangd.setup({
+	cmd = { "/usr/bin/clangd",
+		"--compile-commands-dir=/opt/homebrew/bin/g++",
+		"--header-insertion=never",
+		"--clang-tidy",
+		"--enable-config",
+	},
+})
 --local null_ls = require("null-ls")
 --null_ls.setup({
 --	sources = {
@@ -25,8 +25,8 @@ require("lspconfig").lua_ls.setup({})
 --		null_ls.builtins.diagnostics.luacheck, -- lua linter
 --	},
 --})
-require("lspconfig").rust_analyzer.setup ({
-    on_attach = on_attach,
+require("lspconfig").rust_analyzer.setup({
+	on_attach = on_attach,
 })
 
 -- Set up nvim-cmp.
@@ -46,10 +46,10 @@ cmp.setup({
 		["<C-b>"] = cmp.mapping.scroll_docs(-4),
 		["<C-f>"] = cmp.mapping.scroll_docs(4),
 		["<C-i>"] = cmp.mapping.select_prev_item(),
-        ["<C-k>"] = cmp.mapping.select_next_item(),
-        ['<C-l>'] = cmp.mapping.complete(),
-        ['<C-j>'] = cmp.mapping.abort(),
-        ["<CR>"] = cmp.mapping.confirm({ select = true }),
+		["<C-k>"] = cmp.mapping.select_next_item(),
+		['<C-l>'] = cmp.mapping.complete(),
+		['<C-j>'] = cmp.mapping.abort(),
+		["<CR>"] = cmp.mapping.confirm({ select = true }),
 	}),
 	sources = cmp.config.sources({
 		{ name = "nvim_lsp" },
