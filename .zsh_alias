@@ -8,6 +8,14 @@ alias vim="nvim"
 alias g="g++ -I. -std=c++23 -o a.out"
 alias a="./a.out"
 
+function d() {
+    ./download.sh $1
+}
+
+function t() {
+    ./test.sh
+}
+
 function clear-screen {
 	ls
 }
