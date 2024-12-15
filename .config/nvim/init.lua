@@ -15,3 +15,4 @@ vim.cmd [[highlight LineNr guifg=#646464]]
 require("lsp-inlayhints").setup()
 require("keymaps")
 local ht = require('haskell-tools')
+vim.opt.guicursor = "n-v-c:block,i:block"
