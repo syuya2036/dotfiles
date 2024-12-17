@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ベースディレクトリ（このスクリプトの位置）
-BASE_DIR=$(pwd)
+BASE_DIR="$HOME/dotfiles"
 
 # .configディレクトリ内のリンク作成
 mkdir -p "$HOME/.config/mise" "$HOME/.config/nvim/lua" "$HOME/.config/wezterm"
