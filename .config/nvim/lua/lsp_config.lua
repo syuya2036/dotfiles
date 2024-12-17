@@ -10,7 +10,6 @@ require("lspconfig").lua_ls.setup({})
 
 require("lspconfig").clangd.setup({
 	cmd = { "/usr/bin/clangd",
-		"--compile-commands-dir=/opt/homebrew/bin/g++",
 		"--header-insertion=never",
 		"--clang-tidy",
 		"--enable-config",
