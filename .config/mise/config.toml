@@ -1,7 +1,6 @@
 [tools]
 go = "1.21"
 python = "3.11.9"
-git = "2.44.0"
 node = "22.8.0"
 rust = "latest"
 rust-analyzer = "2024-03-11"
